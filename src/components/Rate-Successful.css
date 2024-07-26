@@ -1,0 +1,28 @@
+.rate-successful {
+  background: hsl(213, 19%, 18%);
+  color: white;
+  width: 95%;
+  margin: 0 auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.rate-successful > p {
+  color: hsl(217, 12%, 63%);
+  font-size: 13px;
+}
+
+.rate-successful > .rating-selected {
+  background: hsl(213, 21%, 28%);
+  color: hsl(25, 97%, 53%);
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+

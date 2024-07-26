@@ -4,7 +4,6 @@ import "./Rate.css";
 function Rate({ rateData, selectedRate, setSelectedRate }) {
   const handleClick = (number) => {
     setSelectedRate(number);
-    console.log("Selected Rate:", number);
   };
 
   const rate = rateData.map((data, index) => {

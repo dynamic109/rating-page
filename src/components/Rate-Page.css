@@ -2,7 +2,6 @@
   background: hsl(213, 19%, 18%);
   height: max-content;
   width: 90%;
-  display: flex;
   flex-direction: column;
   margin: 0 auto;
   gap: 30px;
@@ -12,9 +11,9 @@
 
 .rate-container > .icon {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  padding: 16px;
+  width: 44px;
+  height: 44px;
+  padding: 13px;
   background: hsl(213, 21%, 28%);
 }
 
@@ -27,13 +26,14 @@
 }
 
 .rate-container > button {
-  height: 40px;
+  height: 45px;
   border-radius: 20px;
   border: none;
   font-weight: 600;
   letter-spacing: 3px;
   background: hsl(25, 97%, 53%);
   padding: 10px;
+  cursor: pointer;
 }
 
 .rate-container > button:focus {

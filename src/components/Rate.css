@@ -12,4 +12,5 @@
   justify-content: center;
   width: 46px;
   color: hsl(217, 12%, 63%);
+  cursor: pointer;
 }

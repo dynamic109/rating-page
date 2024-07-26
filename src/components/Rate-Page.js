@@ -5,11 +5,23 @@ import Rate from "./Rate";
 import Ratings from "../data";
 import "./Rate-Page.css";
 
-function RatePage({ selectedRate, setSelectedRate }) {
+function RatePage({ selectedRate, setSelectedRate, isSubmit, setIsSubmit }) {
   const [rateData, setRateData] = useState(Ratings);
+  const changeDisplayNone = {
+    display: "none",
+  };
+  const changeDisplayFlex = {
+    display: "flex",
+  };
+  function handleSubmit() {
+    setIsSubmit(true);
+  }
 
   return (
-    <div className="rate-container">
+    <div
+      className="rate-container"
+      style={isSubmit ? changeDisplayNone : changeDisplayFlex}
+    >
       <Icon className="icon" src={Icon} />
       <h1>How did we do?</h1>
       <p>
@@ -21,7 +33,7 @@ function RatePage({ selectedRate, setSelectedRate }) {
         selectedRate={selectedRate}
         setSelectedRate={setSelectedRate}
       />
-      <button>SUBMIT</button>
+      <button onClick={selectedRate && handleSubmit}>SUBMIT</button>
     </div>
   );
 }

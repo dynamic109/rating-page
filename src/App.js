@@ -7,10 +7,16 @@ import "./App.css";
 
 function App() {
   const [selectedRate, setSelectedRate] = useState(null);
+  const [isSubmit, setIsSubmit] = useState(false);
   return (
-    <div>
-      <RatePage selectedRate={selectedRate} setSelectedRate={setSelectedRate} />
-      <RateSuccessful selectedRate={selectedRate} />
+    <div className="app">
+      <RatePage
+        selectedRate={selectedRate}
+        setSelectedRate={setSelectedRate}
+        isSubmit={isSubmit}
+        setIsSubmit={setIsSubmit}
+      />
+      <RateSuccessful selectedRate={selectedRate} isSubmit={isSubmit} />
     </div>
   );
 }
