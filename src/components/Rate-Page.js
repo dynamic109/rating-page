@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { ReactComponent as Icon } from "../images/icon-star.svg";
 import Rate from "./Rate";
-import Ratings from "../data";
 import "./Rate-Page.css";
 
 function RatePage({ selectedRate, setSelectedRate, isSubmit, setIsSubmit }) {
-
   const changeDisplayNone = {
     display: "none",
   };
@@ -28,10 +26,7 @@ function RatePage({ selectedRate, setSelectedRate, isSubmit, setIsSubmit }) {
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <Rate
-        selectedRate={selectedRate}
-        setSelectedRate={setSelectedRate}
-      />
+      <Rate selectedRate={selectedRate} setSelectedRate={setSelectedRate} />
       <button onClick={selectedRate && handleSubmit}>SUBMIT</button>
     </div>
   );
