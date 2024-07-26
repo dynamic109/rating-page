@@ -12,25 +12,31 @@ function Rate({ rateData, selectedRate, setSelectedRate }) {
     const isPreviousSelected = selectedRate === rateData[index + 1]?.number;
 
     const backgroundColor = isSelected
-      ? "gold"
+      ? "hsl(25, 97%, 53%)"
       : isPreviousSelected
-      ? "blue"
-      : "green";
+      ? "white"
+      : "hsl(213, 21%, 28%)";
+
+    const color = isSelected
+      ? "black"
+      : isPreviousSelected
+      ? "black"
+      : "hsl(217, 12%, 63%)";
 
     return (
-      <div
+      <span
         className="rate"
         key={data.number}
         id={data.number}
         onClick={() => handleClick(data.number)}
-        style={{ backgroundColor }}
+        style={{ backgroundColor, color }}
       >
         {data.number}
-      </div>
+      </span>
     );
   });
 
-  return <div>{rate}</div>;
+  return <div className="rated">{rate}</div>;
 }
 
 export default Rate;

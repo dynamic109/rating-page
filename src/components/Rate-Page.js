@@ -5,13 +5,12 @@ import Rate from "./Rate";
 import Ratings from "../data";
 import "./Rate-Page.css";
 
-function RatePage() {
+function RatePage({ selectedRate, setSelectedRate }) {
   const [rateData, setRateData] = useState(Ratings);
-  const [selectedRate, setSelectedRate] = useState(null);
 
   return (
     <div className="rate-container">
-      <img src={Icon} />
+      <Icon className="icon" src={Icon} />
       <h1>How did we do?</h1>
       <p>
         Please let us know how we did with your support request. All feedback is
@@ -22,7 +21,7 @@ function RatePage() {
         selectedRate={selectedRate}
         setSelectedRate={setSelectedRate}
       />
-      <button>Submit</button>
+      <button>SUBMIT</button>
     </div>
   );
 }

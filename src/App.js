@@ -6,9 +6,11 @@ import RateSuccessful from "./components/Rate-Successful";
 import "./App.css";
 
 function App() {
+  const [selectedRate, setSelectedRate] = useState(null);
   return (
     <div>
-      <RatePage />
+      <RatePage selectedRate={selectedRate} setSelectedRate={setSelectedRate} />
+      <RateSuccessful selectedRate={selectedRate} />
     </div>
   );
 }
