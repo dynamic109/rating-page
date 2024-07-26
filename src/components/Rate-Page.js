@@ -6,7 +6,7 @@ import Ratings from "../data";
 import "./Rate-Page.css";
 
 function RatePage({ selectedRate, setSelectedRate, isSubmit, setIsSubmit }) {
-  const rateData = useState(Ratings);
+
   const changeDisplayNone = {
     display: "none",
   };
@@ -29,7 +29,6 @@ function RatePage({ selectedRate, setSelectedRate, isSubmit, setIsSubmit }) {
         appreciated to help us improve our offering!
       </p>
       <Rate
-        rateData={rateData}
         selectedRate={selectedRate}
         setSelectedRate={setSelectedRate}
       />

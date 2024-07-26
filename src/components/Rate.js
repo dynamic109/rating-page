@@ -1,13 +1,15 @@
 import "./Rate.css";
 
-function Rate({ rateData, selectedRate, setSelectedRate }) {
+import Ratings from "../data";
+
+function Rate({ selectedRate, setSelectedRate }) {
   const handleClick = (number) => {
     setSelectedRate(number);
   };
 
-  const rate = rateData.map((data, index) => {
+  const rate = Ratings.map((data, index) => {
     const isSelected = selectedRate === data.number;
-    const isPreviousSelected = selectedRate === rateData[index + 1]?.number;
+    const isPreviousSelected = selectedRate === Ratings[index + 1]?.number;
 
     const backgroundColor = isSelected
       ? "hsl(25, 97%, 53%)"
