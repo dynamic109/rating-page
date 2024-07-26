@@ -1,0 +1,10 @@
+.rate-container {
+  background: hsl(213, 19%, 18%);
+  height: max-content;
+  width: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}

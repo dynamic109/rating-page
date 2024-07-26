@@ -1,0 +1,11 @@
+.rate {
+  display: flex;
+  flex-direction: row;
+  font-size: 17px;
+  width: 17%;
+  border-radius: 50%;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
