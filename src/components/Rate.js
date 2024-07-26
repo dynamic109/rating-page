@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./Rate.css";
 
 function Rate({ rateData, selectedRate, setSelectedRate }) {
@@ -39,16 +38,3 @@ function Rate({ rateData, selectedRate, setSelectedRate }) {
 }
 
 export default Rate;
-
-// function handleClick(e) {
-//   const id = e.target.id;
-//   if (id) {
-//     rateData[id].background = "blue";
-//     rateData[id - 1].background = "red";
-//     console.log(`Hi ${rateData[id].background}`);
-//     console.log(`Hi ${id - 1} ${rateData[id - 1].background}`);
-//     console.log(rateData);
-//   } else {
-//     console.log("error");
-//   }
-// }

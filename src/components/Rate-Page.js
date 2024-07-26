@@ -6,7 +6,7 @@ import Ratings from "../data";
 import "./Rate-Page.css";
 
 function RatePage({ selectedRate, setSelectedRate, isSubmit, setIsSubmit }) {
-  const [rateData, setRateData] = useState(Ratings);
+  const rateData = useState(Ratings);
   const changeDisplayNone = {
     display: "none",
   };
